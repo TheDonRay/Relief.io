@@ -24,6 +24,11 @@ body {
 /* Title styling */
 .title {
   color: rgb(0, 0, 0);
+  word-spacing: 2px;
+} 
+
+.paragraph-style{ 
+    word-spacing: 2px;
 }
 
 /* Buttons row */
