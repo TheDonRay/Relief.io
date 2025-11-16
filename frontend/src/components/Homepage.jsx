@@ -1,8 +1,11 @@
-import React, { useEffect, useRef } from "react";
-require("../styles/Home.css");
+import React, { useEffect, useRef } from "react"; 
+import { useNavigate } from 'react-router-dom';
+
+require("../styles/Home.css"); 
+
 
 export default function Home() {
-  const titleRef = useRef(null);
+  const titleRef = useRef(null);  
 
   useEffect(() => {
     const title = "Where technology meets empathy.";
@@ -20,7 +23,11 @@ export default function Home() {
         titleElement.appendChild(span);
       });
     }
-  }, []);
+  }, []); 
+
+  // instantiate button functions to implement the link to the next page for both buttons. 
+  // function 1 
+  // function 2 
 
   return (
     <div className="home-wrapper">
