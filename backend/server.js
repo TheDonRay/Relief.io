@@ -3,7 +3,9 @@ const app = express();
 require("dotenv").config();
 
 //import routes here as such
-const signupRoute = require("./routes/signedup.js");
+const signupRoute = require("./routes/signedup.js"); 
+// import the route here as such 
+const APIcall = require("./routes/api.js"); 
 
 // set up middleware
 app.use(express.json());
@@ -17,7 +19,8 @@ app.get("/", (req, res) => {
 });
 
 //mount route here to the expressApp as such
-app.use("/api/", signupRoute);
+app.use("/api/", signupRoute); 
+app.use("/api/", APIcall); 
 
 app.listen(PORT, () => {
   console.log(
