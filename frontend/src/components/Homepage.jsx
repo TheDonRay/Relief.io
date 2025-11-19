@@ -7,7 +7,8 @@ export default function Home() {
   const titleRef = useRef(null);
   const paragraphRef = useRef(null);
 
-  // initialize the use Navigate here 
+  // initialize the use Navigate here  
+  const navigate = useNavigate(); 
 
   // Reusable function to animate any text into spans
   const animateText = (element, text) => {
@@ -35,7 +36,11 @@ export default function Home() {
     animateText(paragraphRef.current, paragraphText);
   }, []);
 
-  // later set upo the button use navigates 
+  // later set upo the button use navigates  
+  // intialize button functions herer as such 
+  function buttonNav1() { 
+    navigate('/Learnmore'); 
+  }
 
   return (
     <div className="home-wrapper">
@@ -45,7 +50,7 @@ export default function Home() {
         <p className="paragraph-style" ref={paragraphRef}></p>
 
         <div className="buttons-row">
-          <button className="btn1">
+          <button className="btn1" onClick={buttonNav1}>
             <span>Learn More</span>
           </button>
           <button className="btn2">
