@@ -9,10 +9,10 @@ body {
 
 /* ============ Layout ============ */
 .home-wrapper {
-  min-height: 100vh;           /* full viewport height */
+  min-height: 100vh; /* full viewport height */
   display: flex;
-  justify-content: center;     /* horizontal center */
-  align-items: center;         /* vertical center */
+  justify-content: center; /* horizontal center */
+  align-items: center; /* vertical center */
   font-family: "Plus Jakarta Sans", sans-serif;
 }
 
@@ -33,10 +33,10 @@ body {
 
 .paragraph-style {
   word-spacing: 2px;
-  white-space: normal;       /* ensures wrapping */
+  white-space: normal; /* ensures wrapping */
   overflow-wrap: break-word; /* prevents long words from breaking layout */
-  word-break: break-word;    /* forces wrap inside long spans */
-  display: block;  
+  word-break: break-word; /* forces wrap inside long spans */
+  display: block;
 }
 
 /* Each character span created in JS */
@@ -44,8 +44,8 @@ body {
   display: inline-block;
   filter: blur(8px);
   opacity: 0;
-  animation: clearBlur 0.7s forwards; 
-  white-space: pre-wrap;  /* preserves spacing */
+  animation: clearBlur 0.7s forwards;
+  white-space: pre-wrap; /* preserves spacing */
 }
 
 /* Blur → clear animation */
@@ -84,7 +84,10 @@ body {
   cursor: pointer;
   position: relative;
   overflow: hidden;
-  transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease,
+    background 0.2s ease;
 }
 
 /* Button text span (for arrow animation) */

@@ -7,8 +7,8 @@ export default function Home() {
   const titleRef = useRef(null);
   const paragraphRef = useRef(null);
 
-  // initialize the use Navigate here  
-  const navigate = useNavigate(); 
+  // initialize the use Navigate here
+  const navigate = useNavigate();
 
   // Reusable function to animate any text into spans
   const animateText = (element, text) => {
@@ -36,10 +36,16 @@ export default function Home() {
     animateText(paragraphRef.current, paragraphText);
   }, []);
 
-  // later set upo the button use navigates  
+  // later set upo the button use navigates
   // intialize button functions herer as such 
-  function buttonNav1() { 
-    navigate('/Learnmore'); 
+  // learn more button function here 
+  function buttonNav1() {
+    navigate("/Learnmore");
+  } 
+ 
+  // second function for navigation to buttnav2
+  function buttonNav2() { 
+    navigate("/Mainpage"); 
   }
 
   return (
@@ -53,7 +59,7 @@ export default function Home() {
           <button className="btn1" onClick={buttonNav1}>
             <span>Learn More</span>
           </button>
-          <button className="btn2">
+          <button className="btn2" onClick={buttonNav2}>
             <span>Choose Your therapist!</span>
           </button>
         </div>
